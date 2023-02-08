@@ -5,11 +5,13 @@ import Show from "./Pages/Show";
 import New from "./Pages/New";
 import Edit from "./Pages/Edit";
 import "./App.css";
+import Navbar from "./Common/Navbar";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/messages" element={<Index />} />
