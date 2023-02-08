@@ -14,15 +14,9 @@ function Navbar() {
     <header>
       <h3>Q'hubo</h3>
       <nav ref={navRef}>
-        <Link onClick={showNavBar} to="/home">
-          Home
-        </Link>
-        <Link onClick={showNavBar} to="/messages">
-          Messages
-        </Link>
-        <Link onClick={showNavBar} to="/about">
-          About
-        </Link>
+        <Link to="/home">Home</Link>
+        <Link to="/messages">Messages</Link>
+        <Link to="/about">About</Link>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
           <FaTimes />
         </button>
