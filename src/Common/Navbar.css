@@ -21,8 +21,8 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
-    color: var(--secondaryColor)
+nav a:hover, .nav-btn:hover, .compose-btn:hover {
+    color: rgb(0, 208, 101)
 }
 
 header .nav-btn {
@@ -35,6 +35,16 @@ header .nav-btn {
     visibility: hidden;
     opacity: 0;
     font-size: 1.8rem;
+}
+
+.compose-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 700px) {
