@@ -1,7 +1,7 @@
 function Home() {
   return (
     <div>
-      <h1>Home</h1>
+      <h1>Welcome to Q'Hubo Messenger!</h1>
     </div>
   );
 }
