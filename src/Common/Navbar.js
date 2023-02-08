@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 
@@ -11,10 +12,11 @@ function Navbar() {
 
   return (
     <header>
-      <h3>Logo</h3>
+      <h3>Q'hubo</h3>
       <nav ref={navRef}>
-        <a href="/home">Home</a>
-        <a href="/about">About</a>
+        <Link to="/home">Home</Link>
+        <Link to="/messages">Messages</Link>
+        <Link to="/about">About</Link>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
           <FaTimes />
         </button>
