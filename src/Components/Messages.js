@@ -1,5 +1,7 @@
 import {useState, useEffect} from "react"
 import axios from "axios"
+import Message from "./Message";
+import "./Messages.css"
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -13,9 +15,9 @@ function Messages() {
     }, [])
 
     return (
-        <div>
+        <div className="messages">
             {messages.map((message) => {
-                return <li>{message.message}</li>
+                return <Message key={message.id} message={message}/>
             })}
         </div>
     );
