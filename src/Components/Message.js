@@ -12,7 +12,7 @@ function Message({message}) {
           <p>{message.message}</p>
         </div>
       </div>
-      <p id="date">{formatTimeStamp(message.timesent)}</p>
+      <p id="time-stamp">{formatTimeStamp(message.timesent)}</p>
     </Link>
   )
 }

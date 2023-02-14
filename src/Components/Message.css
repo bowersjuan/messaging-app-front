@@ -9,7 +9,7 @@
     border-radius: 50%;
 }
 
-.message-container p {
+.message p {
     color: white;
     font-size: 1rem;
     text-align: left;
@@ -24,6 +24,13 @@
     padding: 1rem;
 }
 
-#date {
+#time-stamp {
     width: 4rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.message-container:hover {
+    background-color: rgba(17, 28, 34, 0.95);
+    text-decoration: none;
 }
