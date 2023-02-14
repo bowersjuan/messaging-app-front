@@ -1,7 +1,30 @@
 .message {
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.message img {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.message-container p {
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.message-container {
+    background-color: rgb(17, 28, 34);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
+
+    padding: 1rem;
+}
+
+#date {
+    width: 4rem;
+    margin: 0;
 }
