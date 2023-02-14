@@ -1,6 +1,9 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+
 import { FaBars, FaTimes, FaTelegramPlane } from "react-icons/fa";
+//REF: https://react-icons.github.io/react-icons/icons?name=fa
+
 import "./Navbar.css";
 
 function Navbar() {
