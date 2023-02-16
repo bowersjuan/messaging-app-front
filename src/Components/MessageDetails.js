@@ -1,5 +1,5 @@
 function MessageDetails() {
-    return
+    return <p>Hello</p>
 }
 
 export default MessageDetails;

@@ -1,7 +1,10 @@
+import MessageDetails from "../Components/MessageDetails";
+
 function Show() {
   return (
     <div>
-      <h1>Show</h1>
+      <h2>Show</h2>
+      <MessageDetails />
     </div>
   );
 }
