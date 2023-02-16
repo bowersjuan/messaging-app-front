@@ -15,6 +15,10 @@ header {
     color: var(--textColor)
 }
 
+.logo {
+    width: 7rem;
+}
+
 header nav {
     display: flex;
     align-items: center;
@@ -30,7 +34,8 @@ nav a {
 
 nav a:hover,
 .nav-btn:hover,
-.compose-btn:hover {
+.compose-btn:hover,
+.login-btn:hover {
     color: rgb(0, 208, 101)
 }
 
@@ -46,7 +51,8 @@ header .nav-btn {
     font-size: 1.8rem;
 }
 
-.compose-btn {
+.compose-btn,
+.login-btn {
     padding: 5px;
     cursor: pointer;
     background: transparent;

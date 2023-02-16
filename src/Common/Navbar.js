@@ -1,10 +1,12 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 
-import { FaBars, FaTimes, FaTelegramPlane } from "react-icons/fa";
+import { FaBars, FaTimes, FaTelegramPlane, FaArrowCircleRight } from "react-icons/fa";
 //REF: https://react-icons.github.io/react-icons/icons?name=fa
 
 import "./Navbar.css";
+
+import logo from "../Assets/messaging-app-logo.png"
 
 function Navbar() {
   const navRef = useRef();
@@ -15,9 +17,11 @@ function Navbar() {
 
   return (
     <header>
-      <h3>Q'hubo</h3>
+      <Link to="/">
+        <img className="logo" src={logo} alt="logo"/>
+      </Link>
       <nav ref={navRef}>
-        <Link to="/">Home</Link>
+        <Link to="/signup">Sign Up</Link>
         <Link to="/messages">Messages</Link>
         <Link to="/about">About</Link>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
@@ -30,6 +34,9 @@ function Navbar() {
       <button className="compose-btn">
         <FaTelegramPlane />
       </button>
+      <Link className="login-btn">
+        <FaArrowCircleRight />
+      </Link>
     </header>
   );
 }
