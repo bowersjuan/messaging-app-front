@@ -12,7 +12,11 @@ header {
     height: 80px;
     padding: 0 2rem;
     background-color: var(--mainColor);
-    color: var(--textColor)
+    color: var(--textColor);
+
+    margin-bottom: 1.5rem;
+
+    box-shadow: 0 10px 80px 10px var(--mainColorLight);
 }
 
 .logo {
