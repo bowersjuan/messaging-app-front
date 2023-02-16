@@ -1,0 +1,35 @@
+.form-container {
+    width: 50vw;
+    margin: auto;
+
+    padding: 40px;
+
+    background-image: linear-gradient(to bottom right, rgb(56, 209, 91), rgb(55, 59, 56));
+    box-shadow: 67px 67px 10px 7px GREY;
+
+    border-radius: 10px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 10px;
+}
+
+form label {
+    margin: auto;
+    margin-right: 0px;
+    color: white;
+}
+
+form input {
+    text-align: center;
+    border-radius: 5px;
+
+    color: black;
+}
+
+#submit-button {
+    background-color: rgb(0, 72, 63);
+    color: white;
+}
