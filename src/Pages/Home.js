@@ -1,7 +1,8 @@
 function Home() {
   return (
     <div>
-      <h1>Welcome to Q'Hubo Messenger!</h1>
+      <br></br>
+      <h1>Welcome to Q'Hubo Messenger</h1>
     </div>
   );
 }
