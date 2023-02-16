@@ -1,8 +1,11 @@
 /* https://www.imi21.com/background-video-full-screen.php */
 
 #videowrapper {
-    position: relative;
     overflow: hidden;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
 }
 
 #fullScreenDiv {
