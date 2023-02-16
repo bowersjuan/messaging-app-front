@@ -2,30 +2,30 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-import "./SignupNewForm.css"
+import "./LoginForm.css"
 
 const API = process.env.REACT_APP_API_URL;
 
-function SignupNewForm() {
-  const [newUser, setNewUser] = useState({
+function LoginForm() {
+  const [user, setUser] = useState({
     username: "",
     password: ""
   });
   const navigate = useNavigate();
 
   const handleTextChange = (e) => {
-    setNewUser({ ...newUser, [e.target.id]: e.target.value });
+    setUser({ ...user, [e.target.id]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     axios
-      .post(`${API}/users/signup`, newUser)
+      .post(`${API}/users/login`, user)
       .then(() => navigate("/"))
       .catch((err) => console.error(err));
 
-    setNewUser({
+    setUser({
         username: "",
         password: ""
     });
@@ -39,14 +39,14 @@ function SignupNewForm() {
           id="username"
           type="text"
           onChange={handleTextChange}
-          value={newUser.username}
+          value={user.username}
         />
         <label htmlFor="password">Pass </label>
         <input
           id="password"
           type="password"
           onChange={handleTextChange}
-          value={newUser.password}
+          value={user.password}
         />
         <div></div>
         <input id="submit-button" type="submit" />
@@ -55,4 +55,4 @@ function SignupNewForm() {
   );
 }
 
-export default SignupNewForm;
+export default LoginForm;

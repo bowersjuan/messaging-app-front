@@ -34,7 +34,7 @@ function Navbar() {
       <button className="compose-btn">
         <FaTelegramPlane />
       </button>
-      <Link className="login-btn">
+      <Link to="/login" className="login-btn">
         <FaArrowCircleRight />
       </Link>
     </header>

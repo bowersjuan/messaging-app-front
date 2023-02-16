@@ -6,7 +6,8 @@ import New from "./Pages/New";
 import Edit from "./Pages/Edit";
 import "./App.css";
 import Navbar from "./Common/Navbar";
-import Signup from "./Pages/Signup";
+import Signup from "./Pages/UserAuth/Signup";
+import Login from "./Pages/UserAuth/Login";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/signup" element={<Signup />}/>
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/messages" element={<Index />} />
           <Route path="/messages/:index" element={<Show />} />
           <Route path="/messages/new" element={<New />} />
