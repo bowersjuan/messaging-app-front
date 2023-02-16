@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Index from "./Pages/Index";
@@ -10,6 +11,12 @@ import Signup from "./Pages/UserAuth/Signup";
 import Login from "./Pages/UserAuth/Login";
 
 function App() {
+  const [isLogged, setIsLogged] = useState(false)
+
+  const login = () => {
+    setIsLogged(true)
+  }
+
   return (
     <div className="App">
       <Router>
@@ -17,7 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login login={login}/>} />
           <Route path="/messages" element={<Index />} />
           <Route path="/messages/:index" element={<Show />} />
           <Route path="/messages/new" element={<New />} />

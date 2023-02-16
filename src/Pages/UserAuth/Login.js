@@ -1,11 +1,11 @@
 import LoginForm from "../../Components/LoginForm";
 
-function Login() {
+function Login({login}) {
   return (
     <div>
       <h2>Login</h2>
       <br></br>
-      <LoginForm />
+      <LoginForm login={login} />
     </div>
   );
 }

@@ -1,17 +1,23 @@
-import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 import "./LoginSignupForms.css"
 
 const API = process.env.REACT_APP_API_URL;
 
-function LoginForm() {
+function LoginForm({login}) {
   const [user, setUser] = useState({
     username: "",
     password: ""
   });
   const navigate = useNavigate();
+
+  const errorLogin = useRef()
+
+  const handleLoginError = () => {
+    errorLogin.current.classList.toggle("visible");
+  }
 
   const handleTextChange = (e) => {
     setUser({ ...user, [e.target.id]: e.target.value });
@@ -22,8 +28,14 @@ function LoginForm() {
 
     axios
       .post(`${API}/users/login`, user)
-      .then(() => navigate("/"))
-      .catch((err) => console.error(err));
+      .then((res) => {
+        login(true)
+        navigate(`/users/${res.data.id}`)
+      })
+      .catch((err) => {
+        console.error(err)
+        handleLoginError()
+      });
 
     setUser({
         username: "",
@@ -51,6 +63,7 @@ function LoginForm() {
           />
           <br></br>
           <input id="submit-button" type="submit" value="Login"/>
+          <p id="incorrect-login-prompt" className="visible" ref={errorLogin}>*Incorrect Login Info*</p>
         </div>
       </form>
     </div>

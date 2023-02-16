@@ -36,3 +36,15 @@ form input {
     color: white;
     cursor: pointer;
 }
+
+#incorrect-login-prompt {
+    margin-top: 1rem;
+    color: rgb(238, 71, 71);
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.visible {
+    display: none;
+}
