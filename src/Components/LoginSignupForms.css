@@ -1,8 +1,7 @@
 .form-container {
-    width: 50vw;
+    padding: 2rem;
     margin: auto;
-
-    padding: 40px;
+    width: 20rem;
 
     background-image: linear-gradient(to bottom right, rgb(56, 209, 91), rgb(55, 59, 56));
     box-shadow: 67px 67px 10px 7px GREY;
@@ -10,26 +9,30 @@
     border-radius: 10px;
 }
 
-form {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    gap: 10px;
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container a {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
 }
 
 form label {
-    margin: auto;
-    margin-right: 0px;
     color: white;
 }
 
 form input {
-    text-align: center;
-    border-radius: 5px;
-
     color: black;
+    padding: 0 0.5rem 0 0.5rem;
 }
 
 #submit-button {
+    width: 10rem;
+    margin: auto;
     background-color: rgb(0, 72, 63);
     color: white;
+    cursor: pointer;
 }

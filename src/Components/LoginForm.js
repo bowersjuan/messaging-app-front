@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
-import "./LoginForm.css"
+import "./LoginSignupForms.css"
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -34,22 +34,24 @@ function LoginForm() {
   return (
     <div className="form-container">
       <form className="form" onSubmit={handleSubmit}>
-        <label htmlFor="username">User </label>
-        <input
-          id="username"
-          type="text"
-          onChange={handleTextChange}
-          value={user.username}
-        />
-        <label htmlFor="password">Pass </label>
-        <input
-          id="password"
-          type="password"
-          onChange={handleTextChange}
-          value={user.password}
-        />
-        <div></div>
-        <input id="submit-button" type="submit" />
+        <div className="inputs-container">
+          <label htmlFor="username">Username:</label>
+          <input
+            id="username"
+            type="text"
+            onChange={handleTextChange}
+            value={user.username}
+          />
+          <label htmlFor="password">Password:</label>
+          <input
+            id="password"
+            type="password"
+            onChange={handleTextChange}
+            value={user.password}
+          />
+          <br></br>
+          <input id="submit-button" type="submit" value="Login"/>
+        </div>
       </form>
     </div>
   );
