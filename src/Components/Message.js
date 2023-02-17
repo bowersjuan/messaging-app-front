@@ -1,26 +1,40 @@
 import { useState, useEffect } from "react";
 import {Link} from "react-router-dom"
+import axios from "axios";
 import { formatTimeStamp } from "../Helpers/formatters";
 import "./Message.css"
 
+const API = process.env.REACT_APP_API_URL;
+
 function Message({message}) {
   const [user, setUser] = useState()
+  const [sender, setSender] = useState()
+
+  const rand = 21 + Math.floor(Math.random() * 20)
 
   useEffect(() => {
     setUser(JSON.parse(window.localStorage.getItem("user")))
   }, [])
+
+  useEffect(() => {
+    axios.get(`${API}/users/${message.sender_id}`)
+    .then((res) => setSender(res.data))
+    .catch((err) => console.error(err))
+  }, [message.sender_id])
   
   return (
-    <Link to={`${message.user_id}`} className="message-container">
+    <div >
+      <Link to={`${user?.id}`} className="message-container">
       <div className="message">
-        <img alt="user" src="https://fakeface.rest/thumb/view?minimum_age=21&maximum_age=40"/>
+        <img alt="user" src={`https://fakeface.rest/thumb/view?minimum_age=21&maximum_age=${rand}`}/>
         <div>
+          <p id="from">From: {sender?.username}</p>
           <p>{message.message}</p>
-          <p id="name">- {user?.name}</p>
         </div>
       </div>
-      <p id="time-stamp">{formatTimeStamp(message.time_sent)}</p>
+      {formatTimeStamp(message.time_sent)}
     </Link>
+    </div>
   )
 }
 

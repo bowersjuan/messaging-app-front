@@ -26,6 +26,10 @@
     padding: 1rem;
 
     text-decoration: none;
+
+    border-bottom: 5px solid rgb(9, 14, 17);
+    ;
+    ;
 }
 
 #time-stamp {
@@ -33,6 +37,11 @@
     color: white;
     text-shadow: 1px 1px rgb(0, 208, 101);
     font-size: 0.7rem;
+}
+
+#from {
+    font-size: 0.8rem;
+    color: rgb(0, 208, 101);
 }
 
 .message-container:hover {
