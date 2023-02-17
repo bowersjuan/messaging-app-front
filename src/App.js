@@ -30,21 +30,22 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login login={login}/>} />
+          <Route path="/prompt" element={<LogInPrompt />} />
           {
             isLogged ? 
               <>
-                <Route path="/messages" element={<Index />} />
-                <Route path="/messages/:index" element={<Show />} />
-                <Route path="/messages/new" element={<New />} />
-                <Route path="/messages/:index/edit" element={<Edit />} />
+                <Route path="/users/:id/messages" element={<Index />} />
+                <Route path="/users/:id/messages/new" element={<New />} />
+                <Route path="/users/:id/messages/:id"  element={<Show />} />
+                <Route path="/users/:id/messages/:id/edit" element={<Edit />} />
               </> 
               : 
               <>
-                <Route path="/messages" element={<LogInPrompt />} />
-                <Route path="/messages/:index" element={<LogInPrompt />} />
-                <Route path="/messages/new" element={<LogInPrompt />} />
-                <Route path="/messages/:index/edit" element={<LogInPrompt />} />
-              </>
+                <Route path="/users/:id/messages" element={<LogInPrompt />} />
+                <Route path="/users/:id/messages/new" element={<LogInPrompt />} />
+                <Route path="/users/:id/messages/:id"  element={<LogInPrompt />} />
+                <Route path="/users/:id/messages/:id/edit" element={<LogInPrompt />} />
+              </> 
           }
         </Routes>
       </Router>
