@@ -6,14 +6,17 @@ import video from "../Assets/video.mp4"
 
 function BackgrndVideo() {
     return  (
-        <div id="videowrapper">
+        <div id="videowrapper" className="video-container">
             <video id="video" role="presentation" preload="auto" playsinline crossorigin="anonymous" loop="" muted="" autoplay="" class="blur">
                 <source src={video} type="video/mp4" />
             </video>
-            <div id="videoMessage" class="styling"> 
-                <h1>Full screen background video</h1>
-                <h2>Would you like this on your site?</h2>
-                <p class="videoClick"><a href="#main">Find out how</a></p> 
+            <div id="videoMessage" class="styling" className="container1"> 
+                <h1>Q'Hubo Messenger</h1>
+                <br></br>
+                <p>Links:</p>
+                <a target="black" href="https://github.com/bowersjuan/messaging-app-front">@theCode</a>
+                <a target="black" href="https://www.linkedin.com/in/bowersjuan/">@theDev</a>
+                <a target="black" href="https://github.com/bowersjuan">@GitHub</a>
             </div>
         </div>
     )

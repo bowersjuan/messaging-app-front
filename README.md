@@ -1,5 +1,5 @@
 
-## Project Name and Pirch
+## Project Name and Pitch
 - Q'Hubo Messenger
 - An application used to let users communicate through written messages
 
@@ -38,4 +38,5 @@ To Visit App:
 
   - This project was challenging because I had to be in charge of the whole process from creating the idea; planning out through wireframes, ERDs and user stories; and then development and deployment.
 
-  - The technologies implemented in this project are React, React Router, Express, Node, Postgresql...
+  - This project was with a PERN Stack architecture
+  - Packages: react-router, b-crypt, react-icons 
