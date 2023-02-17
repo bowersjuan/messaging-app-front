@@ -3,7 +3,13 @@ function formatTimeStamp(timeStamp) {
     const dateArray = dateObj.toDateString().split(" ");
     const time = `${dateObj.toLocaleTimeString()}`
 
-    return `${time} ${dateArray[1]} ${dateArray[2]}`
+    return (
+        <div id="time-stamp">
+            <p>{time}</p>
+            <p>{dateArray[1]} {dateArray[2]}</p>
+        </div>
+    )
+    
 }
 
 export {formatTimeStamp};
