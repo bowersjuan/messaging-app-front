@@ -1,30 +1,30 @@
-import { useRef, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useRef, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
-import { FaBars, FaTimes, FaTelegramPlane, FaSignInAlt } from "react-icons/fa";
+import { FaBars, FaTimes, FaTelegramPlane, FaSignInAlt } from 'react-icons/fa';
 //REF: https://react-icons.github.io/react-icons/icons?name=fa
 
-import "./Navbar.css";
+import './Navbar.css';
 
-import logo from "../Assets/messaging-app-logo.png"
+import logo from '../Assets/messaging-app-logo.png';
 
-function Navbar() {
-  const [user, setUser] = useState()
+function Navbar({ isLogged }) {
+  const [user, setUser] = useState();
   const navRef = useRef();
 
   const showNavBar = () => {
-    navRef.current.classList.toggle("responsive_nav");
+    navRef.current.classList.toggle('responsive_nav');
   };
 
   useEffect(() => {
-    const loggedUser = JSON.parse(window.localStorage.getItem("user"))
-    setUser(loggedUser)
-  }, [])
+    const loggedUser = JSON.parse(window.localStorage.getItem('user'));
+    setUser(loggedUser);
+  }, [isLogged]);
 
   return (
     <header>
       <Link to="/">
-        <img className="logo" src={logo} alt="logo"/>
+        <img className="logo" src={logo} alt="logo" />
       </Link>
       <nav ref={navRef}>
         <Link to="/signup">Sign Up</Link>
@@ -37,9 +37,9 @@ function Navbar() {
       <button className="nav-btn" onClick={showNavBar}>
         <FaBars />
       </button>
-      <Link to="users/:id/messages/new" className="compose-btn">
-          <FaTelegramPlane />
-        </Link>
+      <Link to={`users/${user?.id}/messages/new`} className="compose-btn">
+        <FaTelegramPlane />
+      </Link>
       <Link to="/login" className="login-btn">
         <FaSignInAlt />
       </Link>
