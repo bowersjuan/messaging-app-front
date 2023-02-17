@@ -1,7 +1,11 @@
-function New() {
+import MessageNewForm from "../Components/Forms/MessageNewForm";
+
+function New({ isLogged }) {
   return (
     <div>
-      <h1>New</h1>
+      <h2>Send a New Message</h2>
+      <br></br>
+      <MessageNewForm isLogged={isLogged} />
     </div>
   );
 }

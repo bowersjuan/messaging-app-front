@@ -29,6 +29,10 @@ form input {
     padding: 0 0.5rem 0 0.5rem;
 }
 
+textarea {
+    padding: 10px;
+}
+
 #submit-button {
     width: 10rem;
     margin: auto;
