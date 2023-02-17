@@ -1,4 +1,4 @@
-import MessageNewForm from "../Components/Forms/MessageNewForm";
+import MessageNewForm from '../Components/Forms/MessageNewForm';
 
 function New({ isLogged }) {
   return (

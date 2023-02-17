@@ -1,18 +1,18 @@
-import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
-import axios from "axios";
+import { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import axios from 'axios';
 
-import "./LoginSignupForms.css";
+import './LoginSignupForms.css';
 
 const API = process.env.REACT_APP_API_URL;
 
-function MessageNewForm() {
-  const user = JSON.parse(window.localStorage.getItem("user"));
+function MessageNewForm({ isLogged }) {
+  const user = JSON.parse(window.localStorage.getItem('user'));
 
   const [newMessage, setNewMessage] = useState({
     sender_id: user.id,
-    message: "",
-    favorite: "",
+    message: '',
+    favorite: '',
   });
   const [select, setSelect] = useState(false);
 
@@ -43,13 +43,13 @@ function MessageNewForm() {
 
     axios
       .post(`${API}/messages`, newMessage)
-      .then((res) => navigate("/"))
+      .then((res) => navigate('/'))
       .catch((err) => console.error(err));
 
     setNewMessage({
       sender_id: user.id,
-      message: "",
-      favorite: "",
+      message: '',
+      favorite: '',
     });
   };
 
@@ -85,7 +85,7 @@ function MessageNewForm() {
             rows="3"
           />
           <label htmlFor="favorite">
-            Favorite:{" "}
+            Favorite:{' '}
             <input
               id="favorite"
               type="checkbox"
