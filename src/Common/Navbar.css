@@ -55,6 +55,7 @@ header .nav-btn {
     font-size: 1.8rem;
 }
 
+.inbox-btn,
 .compose-btn,
 .login-btn {
     padding: 5px;

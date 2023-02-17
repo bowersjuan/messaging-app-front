@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 
-import { FaBars, FaTimes, FaTelegramPlane, FaArrowCircleRight } from "react-icons/fa";
+import { FaBars, FaTimes, FaTelegramPlane, FaSignInAlt, FaRegFolder } from "react-icons/fa";
 //REF: https://react-icons.github.io/react-icons/icons?name=fa
 
 import "./Navbar.css";
@@ -22,8 +22,8 @@ function Navbar() {
       </Link>
       <nav ref={navRef}>
         <Link to="/signup">Sign Up</Link>
-        <Link to="/messages">Messages</Link>
         <Link to="/about">About</Link>
+        <Link to="/messages">Inbox</Link>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
           <FaTimes />
         </button>
@@ -31,11 +31,11 @@ function Navbar() {
       <button className="nav-btn" onClick={showNavBar}>
         <FaBars />
       </button>
-      <button className="compose-btn">
-        <FaTelegramPlane />
-      </button>
+      <Link to="/messages/new" className="compose-btn">
+          <FaTelegramPlane />
+        </Link>
       <Link to="/login" className="login-btn">
-        <FaArrowCircleRight />
+        <FaSignInAlt />
       </Link>
     </header>
   );

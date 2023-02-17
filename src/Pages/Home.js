@@ -2,7 +2,7 @@ function Home() {
   return (
     <div>
       <br></br>
-      <h1>Welcome to Q'Hubo Messenger</h1>
+      <h1>Welcome to Q'hubo</h1>
     </div>
   );
 }
