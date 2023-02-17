@@ -1,4 +1,4 @@
-import BackgrndVideo from "../../Assets/video.mp4";
+import BackgrndVideo from "./BackgrndVideo";
 
 function About() {
     return (

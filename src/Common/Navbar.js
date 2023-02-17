@@ -19,7 +19,7 @@ function Navbar() {
   useEffect(() => {
     const loggedUser = JSON.parse(window.localStorage.getItem("user"))
     setUser(loggedUser)
-  })
+  }, [])
 
   return (
     <header>
@@ -29,7 +29,7 @@ function Navbar() {
       <nav ref={navRef}>
         <Link to="/signup">Sign Up</Link>
         <Link to="/about">About</Link>
-        <Link to={`/users/${user.id}/messages`}>Inbox</Link>
+        <Link to={`/users/${user?.id}/messages`}>Inbox</Link>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
           <FaTimes />
         </button>

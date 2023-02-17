@@ -1,6 +1,6 @@
 import "./BackgrndVideo.css"
 
-import video from "../Assets/video.mp4"
+import video from "../../Assets/video.mp4"
 
 //Ref: https://www.imi21.com/background-video-full-screen.php
 

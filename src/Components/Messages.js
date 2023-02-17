@@ -14,7 +14,7 @@ function Messages() {
         axios.get(`${API}/users/${id}/messages`)
         .then((response) => setMessages(response.data))
         .catch((e) => console.error(e))
-    }, [])
+    }, [id])
 
     return (
         <div className="messages">
