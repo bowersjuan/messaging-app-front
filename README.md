@@ -24,16 +24,16 @@ The Project is currently in development.
 
 ## Project Screen Shot(s)
 
-<img src="./public/Assets/Views/Qhubo-Home.png" width="197px" alt="Home Page"/>
-<img src="./public/Assets/Views/Qhubo-Dropdown-Nav.png" width="197x" alt="Home Page"/>
-<img src="./public/Assets/Views/Qhubo-About.png" width="197px" alt="Home Page"/>
-<img src="./public/Assets/Views/Qhubo-Login-Prompt.png" width="197x" alt="Home Page"/>
-<img src="./public/Assets/Views/Qhubo-Login.png" width="197px" alt="Home Page"/>
-<img src="./public/Assets/Views/Qhubo-Login-Incorrect.png" width="197px" alt="Home Page"/>
-<img src="./public/Assets/Views/Qhubo-Signup.png" width="197px" alt="Home Page"/>
-<img src="./public/Assets/Views/Qhubo-Index.png" width="197px" alt="Home Page"/>
-<img src="./public/Assets/Views/Qhubo-Show.png" width="197px" alt="Home Page"/>
-<img src="./public/Assets/Views/Qhubo-New-Message.png" width="197px" alt="Home Page"/>
+<img src="./public/Assets/Views/Qhubo-Home.png" width="250px" alt="Home Page"/>
+<img src="./public/Assets/Views/Qhubo-Dropdown-Nav.png" width="250px" alt="Home Page"/>
+<img src="./public/Assets/Views/Qhubo-About.png" width="250px" alt="Home Page"/>
+<img src="./public/Assets/Views/Qhubo-Login-Prompt.png" width="250px" alt="Home Page"/>
+<img src="./public/Assets/Views/Qhubo-Login.png" width="250px" alt="Home Page"/>
+<img src="./public/Assets/Views/Qhubo-Login-Incorrect.png" width="250px" alt="Home Page"/>
+<img src="./public/Assets/Views/Qhubo-Signup.png" width="250px" alt="Home Page"/>
+<img src="./public/Assets/Views/Qhubo-Index.png" width="250px" alt="Home Page"/>
+<img src="./public/Assets/Views/Qhubo-Show.png" width="250px" alt="Home Page"/>
+<img src="./public/Assets/Views/Qhubo-New-Message.png" width="250px" alt="Home Page"/>
 
 ---
 
