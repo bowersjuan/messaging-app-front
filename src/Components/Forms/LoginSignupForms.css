@@ -1,0 +1,50 @@
+.form-container {
+    padding: 2rem;
+    margin: auto;
+    width: 20rem;
+
+    background-image: linear-gradient(to bottom right, rgb(56, 209, 91), rgb(55, 59, 56));
+    box-shadow: 67px 67px 10px 7px GREY;
+
+    border-radius: 10px;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container a {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+form label {
+    color: white;
+}
+
+form input {
+    color: black;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+#submit-button {
+    width: 10rem;
+    margin: auto;
+    background-color: rgb(0, 72, 63);
+    color: white;
+    cursor: pointer;
+}
+
+#incorrect-login-prompt {
+    margin-top: 1rem;
+    color: rgb(238, 71, 71);
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.visible {
+    display: none;
+}
