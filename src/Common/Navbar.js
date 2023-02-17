@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { FaBars, FaTimes, FaTelegramPlane, FaSignInAlt } from "react-icons/fa";
@@ -9,11 +9,17 @@ import "./Navbar.css";
 import logo from "../Assets/messaging-app-logo.png"
 
 function Navbar() {
+  const [user, setUser] = useState()
   const navRef = useRef();
 
   const showNavBar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
+
+  useEffect(() => {
+    const loggedUser = JSON.parse(window.localStorage.getItem("user"))
+    setUser(loggedUser)
+  })
 
   return (
     <header>
@@ -23,7 +29,7 @@ function Navbar() {
       <nav ref={navRef}>
         <Link to="/signup">Sign Up</Link>
         <Link to="/about">About</Link>
-        <Link to="/users/:id/messages">Inbox</Link>
+        <Link to={`/users/${user.id}/messages`}>Inbox</Link>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
           <FaTimes />
         </button>
