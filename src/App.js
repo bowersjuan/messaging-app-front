@@ -36,15 +36,15 @@ function App() {
               <>
                 <Route path="/users/:id/messages" element={<Index />} />
                 <Route path="/users/:id/messages/new" element={<New />} />
-                <Route path="/users/:id/messages/:id"  element={<Show />} />
-                <Route path="/users/:id/messages/:id/edit" element={<Edit />} />
+                <Route path="/users/:id/messages/:idx"  element={<Show />} />
+                <Route path="/users/:id/messages/:idx/edit" element={<Edit />} />
               </> 
               : 
               <>
                 <Route path="/users/:id/messages" element={<LogInPrompt />} />
                 <Route path="/users/:id/messages/new" element={<LogInPrompt />} />
-                <Route path="/users/:id/messages/:id"  element={<LogInPrompt />} />
-                <Route path="/users/:id/messages/:id/edit" element={<LogInPrompt />} />
+                <Route path="/users/:id/messages/:idx"  element={<LogInPrompt />} />
+                <Route path="/users/:id/messages/:idx/edit" element={<LogInPrompt />} />
               </> 
           }
         </Routes>
