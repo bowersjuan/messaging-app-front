@@ -3,13 +3,24 @@
 - Q'Hubo Messenger
 - An application with login access that allows users to send messaages and view/edit them as well.
 
-## Project Status
+---
 
-The Projecty is currently in development.
+## Repos and Deployment Links
 
-## Project Screen Shot(s)
+- [Front-End GitHub Repo](https://github.com/bowersjuan/messaging-app-front)
+- [Back-End GitHub Repo](https://github.com/bowersjuan/messaging-app-back)
+- [Netlify Front](https://main--leafy-sable-4b9095.netlify.app/)
+- [Render Back](https://dashboard.render.com/web/srv-cfkndsha6gductg2n4ug)
 
 ---
+
+## Project Status
+
+The Project is currently in development.
+
+---
+
+## Project Screen Shot(s)
 
 <img src="./public/Assets/Views/Qhubo-Home.png" width="197px" alt="Home Page"/>
 <img src="./public/Assets/Views/Qhubo-Dropdown-Nav.png" width="197x" alt="Home Page"/>
