@@ -9,7 +9,7 @@ import Edit from "./Pages/Edit";
 import Navbar from "./Common/Navbar";
 import Signup from "./Pages/UserAuth/Signup";
 import Login from "./Pages/UserAuth/Login";
-import About from "./Components/About"
+import About from "./Components/About/About"
 import LogInPrompt from "./Components/LogInPrompt";
 
 import "./App.css";
