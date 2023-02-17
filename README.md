@@ -12,6 +12,8 @@
 - [Netlify Front](https://main--leafy-sable-4b9095.netlify.app/)
 - [Render Back](https://dashboard.render.com/web/srv-cfkndsha6gductg2n4ug)
 
+-[Project Proposal](https://docs.google.com/document/d/1S91fSIYSEpDHsmWSU9ZTZoKXdKIGnt3kZkhmYfrNw80/edit?usp=sharing)
+
 ---
 
 ## Project Status
