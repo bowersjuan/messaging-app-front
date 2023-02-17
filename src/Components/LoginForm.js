@@ -30,7 +30,8 @@ function LoginForm({login}) {
       .post(`${API}/users/login`, user)
       .then((res) => {
         login(true)
-        navigate(`/users/${res.data.id}`)
+        window.localStorage.setItem("user", JSON.stringify({name: res.data.username, id: res.data.id}));
+        navigate(`/users/${res.data.id}/messages`)
       })
       .catch((err) => {
         console.error(err)
@@ -63,7 +64,7 @@ function LoginForm({login}) {
           />
           <br></br>
           <input id="submit-button" type="submit" value="Login"/>
-          <p id="incorrect-login-prompt" className="visible" ref={errorLogin}>*Incorrect Login Info*</p>
+          <p id="incorrect-login-prompt" className="visible" ref={errorLogin}>* Incorrect Login Info</p>
         </div>
       </form>
     </div>
