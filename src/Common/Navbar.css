@@ -9,18 +9,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 90px;
     padding: 0 2rem;
     background-color: var(--mainColor);
     color: var(--textColor);
 
     margin-bottom: 1.5rem;
 
-    box-shadow: 0 10px 80px 10px var(--mainColorLight);
+    box-shadow: 0 10px 30px 20px var(--mainColorLight);
 }
 
 .logo {
     width: 4.2rem;
+    padding-top: 0.5rem;
 }
 
 header nav {

@@ -29,13 +29,18 @@
 
 .modal-footer button {
     height: 4vh;
-    width: 10vh;
+    width: 60px;
     font-size: 1rem;
     padding: 0 0 1.9rem 0;
 
     cursor: pointer;
 
     border-radius: 8px;
+}
+
+.modal-footer button:hover {
+    background-color: black;
+    color: white;
 }
 
 .modal-body {
