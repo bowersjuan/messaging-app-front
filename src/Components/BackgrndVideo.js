@@ -11,7 +11,7 @@ function BackgrndVideo() {
                 <source src={video} type="video/mp4" />
             </video>
             <div id="videoMessage" className="styling, container1"> 
-                <h1>Q'Hubo Messenger</h1>
+                <h1>Q'hubo Messenger</h1>
                 <br></br>
                 <p>Links:</p>
                 <a target="black" href="https://github.com/bowersjuan/messaging-app-front">@theCode</a>

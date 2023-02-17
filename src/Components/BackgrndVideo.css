@@ -56,12 +56,20 @@
     flex-direction: column;
 
     color: white;
-    text-shadow: 6px 6px black;
     font-size: 2rem;
+}
+
+.video-container h1 {
+    text-shadow: 5px 5px black;
+}
+
+.video-container p {
+    text-shadow: 4px 4px black;
 }
 
 .video-container a {
     color: white;
     text-shadow: 4px 4px black;
+    text-decoration: none;
     cursor: pointer;
 }
