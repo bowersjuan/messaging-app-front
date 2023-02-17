@@ -23,7 +23,7 @@ function Navbar() {
       <nav ref={navRef}>
         <Link to="/signup">Sign Up</Link>
         <Link to="/about">About</Link>
-        <Link to="/messages">Inbox</Link>
+        <Link to="/users/:id/messages">Inbox</Link>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
           <FaTimes />
         </button>
@@ -31,7 +31,7 @@ function Navbar() {
       <button className="nav-btn" onClick={showNavBar}>
         <FaBars />
       </button>
-      <Link to="/messages/new" className="compose-btn">
+      <Link to="users/:id/messages/new" className="compose-btn">
           <FaTelegramPlane />
         </Link>
       <Link to="/login" className="login-btn">
