@@ -1,0 +1,43 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    width: 75vw;
+    text-align: center;
+    color: white;
+}
+
+.modal img {
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+.modal-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-footer button {
+    height: 4vh;
+    width: 10vh;
+    font-size: 1rem;
+    padding: 0 0 1.9rem 0;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+}
+
+.modal-body {
+    padding: 10px;
+}
