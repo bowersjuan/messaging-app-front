@@ -7,14 +7,9 @@ import "./Message.css"
 const API = process.env.REACT_APP_API_URL;
 
 function Message({message}) {
-  const [user, setUser] = useState()
   const [sender, setSender] = useState()
 
   const rand = 21 + Math.floor(Math.random() * 20)
-
-  useEffect(() => {
-    setUser(JSON.parse(window.localStorage.getItem("user")))
-  }, [])
 
   useEffect(() => {
     axios.get(`${API}/users/${message.sender_id}`)
@@ -24,7 +19,7 @@ function Message({message}) {
   
   return (
     <div >
-      <Link to={`${user?.id}`} className="message-container">
+      <Link to={`${message.message_id}`} className="message-container">
       <div className="message">
         <img alt="user" src={`https://fakeface.rest/thumb/view?minimum_age=21&maximum_age=${rand}`}/>
         <div>
