@@ -7,10 +7,10 @@ import video from "../Assets/video.mp4"
 function BackgrndVideo() {
     return  (
         <div id="videowrapper" className="video-container">
-            <video id="video" role="presentation" preload="auto" playsinline crossorigin="anonymous" loop="" muted="" autoplay="" class="blur">
+            <video id="video" role="presentation" preload="auto" playsInline crossOrigin="anonymous" loop="" muted="" autoPlay="" className="blur">
                 <source src={video} type="video/mp4" />
             </video>
-            <div id="videoMessage" class="styling" className="container1"> 
+            <div id="videoMessage" className="styling, container1"> 
                 <h1>Q'Hubo Messenger</h1>
                 <br></br>
                 <p>Links:</p>
