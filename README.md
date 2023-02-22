@@ -25,27 +25,35 @@ The Project is currently deployed and functional. The Front-End functionality is
 ## Project Screen Shot(s)
 
 Home Page
+--
 <img src="./public/Assets/Views/Qhubo-Home.png" width="250px" alt="Home Page"/>
 
 Dropdown Navbar
+--
 <img src="./public/Assets/Views/Qhubo-Dropdown-Nav.png" width="250px" alt="Home Page"/>
 
 Login Prompt Modal
+--
 <img src="./public/Assets/Views/Qhubo-Login-Prompt.png" width="250px" alt="Home Page"/>
 
 Login Page
+--
 <img src="./public/Assets/Views/Qhubo-Login.png" width="250px" alt="Home Page"/>
 
 Signup Page
+--
 <img src="./public/Assets/Views/Qhubo-Signup.png" width="250px" alt="Home Page"/>
 
 Messages Index Page
+--
 <img src="./public/Assets/Views/Qhubo-Index.png" width="250px" alt="Home Page"/>
 
 Individual Message Page
+--
 <img src="./public/Assets/Views/Qhubo-Show.png" width="250px" alt="Home Page"/>
 
 New Message Creation Page
+--
 <img src="./public/Assets/Views/Qhubo-New-Message.png" width="250px" alt="Home Page"/>
 
 ---
