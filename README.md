@@ -1,15 +1,15 @@
 ## Project Name and Pitch
 
 - Q'Hubo Messenger
-- An application with login access that allows users to send messaages and view/edit them as well.
+- A WhatsApp Clone with Mobile-First Design created with React
 
 ---
 
 ## Repos and Deployment Links
 
 - [Front-End GitHub Repo](https://github.com/bowersjuan/messaging-app-front)
-- [Back-End GitHub Repo](https://github.com/bowersjuan/messaging-app-back)
 - [Netlify Front](https://main--leafy-sable-4b9095.netlify.app/)
+- [Back-End GitHub Repo](https://github.com/bowersjuan/messaging-app-back)
 - [Render Back](https://dashboard.render.com/web/srv-cfkndsha6gductg2n4ug)
 
 - [Project Proposal](https://docs.google.com/document/d/1S91fSIYSEpDHsmWSU9ZTZoKXdKIGnt3kZkhmYfrNw80/edit?usp=sharing)
@@ -18,21 +18,34 @@
 
 ## Project Status
 
-The Project is currently in development.
+The Project is currently deployed and functional. The Front-End functionality is still limited. Users can only create accounts and login at the moment.
 
 ---
 
 ## Project Screen Shot(s)
 
+Home Page
 <img src="./public/Assets/Views/Qhubo-Home.png" width="250px" alt="Home Page"/>
+
+Dropdown Navbar
 <img src="./public/Assets/Views/Qhubo-Dropdown-Nav.png" width="250px" alt="Home Page"/>
-<img src="./public/Assets/Views/Qhubo-About.png" width="250px" alt="Home Page"/>
+
+Login Prompt Modal
 <img src="./public/Assets/Views/Qhubo-Login-Prompt.png" width="250px" alt="Home Page"/>
+
+Login Page
 <img src="./public/Assets/Views/Qhubo-Login.png" width="250px" alt="Home Page"/>
-<img src="./public/Assets/Views/Qhubo-Login-Incorrect.png" width="250px" alt="Home Page"/>
+
+Signup Page
 <img src="./public/Assets/Views/Qhubo-Signup.png" width="250px" alt="Home Page"/>
+
+Messages Index Page
 <img src="./public/Assets/Views/Qhubo-Index.png" width="250px" alt="Home Page"/>
+
+Individual Message Page
 <img src="./public/Assets/Views/Qhubo-Show.png" width="250px" alt="Home Page"/>
+
+New Message Creation Page
 <img src="./public/Assets/Views/Qhubo-New-Message.png" width="250px" alt="Home Page"/>
 
 ---
